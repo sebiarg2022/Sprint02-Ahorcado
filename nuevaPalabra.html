@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <div class="header">
+       <a href="./index.html"><img src="./img/Logo.jpg"></a> 
+        <h1>Juego del Ahorcado</h1>
+      </div>
+    
+      <div class="container_palabra">
+        
+          <input type="text" name="textoIngresar" id="textoIngresar"  placeholder="Ingrese una nueva palabra"
+          onkeypress="return soloLetrasMinusculas(event);" required autofocus></textarea>
+        <div class="condicion_texto">
+          <img src="./img/simbolo.png" class="imgSimbolo">
+          <p class="leyenda">  Máximo 8 caracteres - Solo LETRAS</p>
+       
+         </div> 
+      
+         <div class="botones_palabra">
+          <button type="button" id="btnGuardar" onclick="guardarTexto()">
+            Guardar y Empezar
+           </button>
+           <button type="button" id="btnCancelar" onclick="window.location.href='./index.html'">
+            Cancelar
+           </button>
+         </div>
+       
+      </div>
+           
+       
+      <hr> 
+      <footer>
+        <div> Sebastian Lucas - Oracle - Alura 2022 </div>
+      </footer>
+      <script src="js/palabras.js"></script>
+    </body>
+    
+    </html>

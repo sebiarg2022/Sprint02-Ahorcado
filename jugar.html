@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Ahorcado</title>
+</head>
+<body onload="cargarJuego()">
+    <div class="header">
+       <a href="./index.html"><img src="./img/Logo.jpg"></a> 
+        <h1>Juego del Ahorcado</h1>
+      </div>
+    
+      <div class="container_canvas">
+        <canvas width="300" height="300">
+         </canvas>     
+      <div class="contenido">
+          <div id="msg" class="flex-col-center" style="display:none">GANASTE</div>  
+          <div id="letras"></div>
+          <div id="guiones"></div>
+         </div>
+         <div id="errorLetras"></div>
+         <div id="leyendaPerdida" style="display:none"> LA PALABRA SECRETA ES:</div>
+      </div>
+         <div class="botones_juego">
+          <button type="button" id="btnNuevo" onclick="window.location.href='./jugar.html'">
+            Nuevo Juego
+           </button>
+           <button type="button" id="btnDesistir" onclick="window.location.href='./index.html'">
+           Desistir
+           </button>
+         </div>
+        </div>
+      </div>
+           
+       
+      <hr> 
+      <footer>
+        <div> Sebastian Lucas - Oracle - Alura 2022 </div>
+      </footer>
+      <script src="js/palabras.js"></script>
+      <script src="js/juego.js"></script>
+    </body>
+    
+    </html>
